@@ -5,7 +5,7 @@
 
 Limelight has successfully exposed a large number of students to some of the capabilities of computer vision in robotics. With python scripting, teams can now take another step forward by writing their own image processing pipelines.
 
-.. image:: https://thumbs.gfycat.com/SpotlessGlisteningCygnet-size_restricted.gif
+.. image:: img/gif/SpotlessGlisteningCygnet.gif
     :align: center
     :width: 100%
 
