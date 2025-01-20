@@ -33,7 +33,7 @@ Controls the source of the image that is passed through the pipeline. Switch to 
 
 This control auto-resets to "Camera" when the GUI is closed.
 
-.. image:: https://thumbs.gfycat.com/MintyKaleidoscopicHarpseal-size_restricted.gif
+.. image:: img/gif/MintyKaleidoscopicHarpseal.gif
 	:align: center
 	:width: 100%
 
@@ -44,7 +44,7 @@ Controls the resolution of the camera and vision pipeline. We recommend using th
 320x240 pipelines execute at 90fps, while 960x720 pipelines execute at 22 fps.
 In 2020, 2x and 3x Hardware Zoom options were added to this field. The zoom options are not digital and use 100% real sensor pixels.
 
-.. image:: https://thumbs.gfycat.com/LawfulRapidArchaeocete-size_restricted.gif
+.. image:: img/gif/LawfulRapidArchaeocete.gif
 
 LEDs
 ---------------------
@@ -56,7 +56,7 @@ Orientation
 ---------------------
 Controls the orientation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
 
-.. image:: https://thumbs.gfycat.com/ImpeccableWhichCaracal-size_restricted.gif
+.. image:: img/gif/ImpeccableWhichCaracal.gif
 	:align: center
 	:width: 100%
 
@@ -64,7 +64,7 @@ Exposure
 ---------------------
 Controls the camera's exposure setting in .01 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, turning vision processing into a straightforward process.
 
-.. image:: https://thumbs.gfycat.com/IlliterateRemoteIberianmole-size_restricted.gif
+.. image:: img/gif/IlliterateRemoteIberianmole.gif
 	:align: center
 	:width: 100%
 
@@ -72,7 +72,7 @@ Black Level Offset
 ---------------------
 Increasing the black level offset can significantly darken your camera stream. This should be increased to further remove arena lights and bright spots from your image. This is a sensor-level setting, and not a fake digital brightness setting.
 
-.. image:: https://thumbs.gfycat.com/SeparateFatHedgehog-size_restricted.gif
+.. image:: img/gif/SeparateFatHedgehog.gif
 	:align: center
 	:width: 100%
 
@@ -92,7 +92,7 @@ Thresholding Tab
 
 Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
 
-.. image:: https://thumbs.gfycat.com/MisguidedClumsyCusimanse-size_restricted.gif
+.. image:: img/gif/MisguidedClumsyCusimanse.gif
 	:align: center
 	:width: 100%
  
@@ -108,7 +108,7 @@ Wands enable users to click on Limelights's video stream to perform automatic HS
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
 	* The "Subtract" wand adjust HSV parameters to ignore the selected pixel
 
-.. image:: https://thumbs.gfycat.com/AdorableScientificLaughingthrush-size_restricted.gif
+.. image:: img/gif/AdorableScientificLaughingthrush.gif
 	:align: center
 	:width: 100%
 
@@ -132,7 +132,7 @@ Erosion and Dilation
 Erosion slightly erodes the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
 Dilation slightly inflates the result of an HSV threshold. Use this to patch holes in thresholding results.
 
-.. image:: https://thumbs.gfycat.com/PastBouncyGnat-size_restricted.gif
+.. image:: img/gif/PastBouncyGnat.gif
 	:align: center
 	:width: 100%
 
@@ -141,7 +141,7 @@ Hue Inversion
 --------------------------------
 Use hue inversion to track red targets, as red exists at both the beginning and the end of the hue range.
 
-.. image:: https://thumbs.gfycat.com/MeekSnarlingFluke-size_restricted.gif
+.. image:: img/gif/MeekSnarlingFluke.gif
 	:align: center
 	:width: 100%
 
@@ -163,7 +163,7 @@ Controls how contours are sorted after they are passed through all other filters
 
 In 2019, the "closest" sort mode was added. This mode will select the target that is closest to the configurable crosshair.
 
-.. image:: https://thumbs.gfycat.com/EnormousImpishDeer-size_restricted.gif
+.. image:: img/gif/EnormousImpishDeer.gif
 	:align: center
 	:width: 100%
 
@@ -172,7 +172,7 @@ Target Area
 ------------------
 Controls the range of acceptable bounding-rectangle areas, as percentages of the screen. You can increase the minimum area to help filter-out stadium lights, and decrease the maximum value to help filter-out things like large displays near the field.
 
-.. image:: https://thumbs.gfycat.com/HairyWarlikeCusimanse-size_restricted.gif
+.. image:: img/gif/HairyWarlikeCusimanse.gif
 	:align: center
 	:width: 100%
 
@@ -183,7 +183,7 @@ Target Fullness
 ------------------
 Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectangle target will have a near-1.0 fullness, while a U-shaped target will have a low fullness.
 
-.. image:: https://thumbs.gfycat.com/AmazingUnfortunateFlyingfish-size_restricted.gif
+.. image:: img/gif/AmazingUnfortunateFlyingfish.gif
 	:align: center
 	:width: 100%
 
@@ -192,7 +192,7 @@ Target Aspect Ratio
 Aspect ratio is defined by the width of the bounding rectangle of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, while a high aspect ratio describes a "wide" rectangle. 
 
 
-.. image:: https://thumbs.gfycat.com/BlankMatureAzurevase-size_restricted.gif
+.. image:: img/gif/BlankMatureAzurevase.gif
 	:align: center
 	:width: 100%
 
@@ -202,7 +202,7 @@ Direction Filter
 ------------------
 Rejects contours on the basis of their orientation. 
 
-.. image:: https://thumbs.gfycat.com/SparklingConcernedCockatoo-size_restricted.gif
+.. image:: img/gif/SparklingConcernedCockatoo.gif
 	:align: center
 	:width: 100%
 
@@ -211,7 +211,7 @@ Smart Speckle Rejection
 Rejects relatively small (as opposed to absolutely small w/ the area filter) contours that have passed through all other filters. This is essential if a target must remain trackable from short-range and long-range. 
 This feature was introduced in the 2019 season to reject Limelight's LED reflections when robots were very close to targets.
 
-.. image:: https://thumbs.gfycat.com/EachInsecureAustraliansilkyterrier-size_restricted.gif
+.. image:: img/gif/EachInsecureAustraliansilkyterrier.gif
 	:align: center
 	:width: 100%
 
@@ -222,7 +222,7 @@ Controls target "grouping". Set to dual mode to look for "targets" that consist 
 
 Smart Target Grouping can group a variable number of targets and reject outliers. It was added in 2022 to help track the upper hub target.
 
-.. image:: https://thumbs.gfycat.com/HugeCraftyBear-size_restricted.gif
+.. image:: img/gif/HugeCraftyBear.gif
 	:align: center
 	:width: 100%
 
@@ -230,7 +230,7 @@ Intersection Filter (Dual Targets Only)
 ------------------------------------------
 Rejects groups of contours based on how they would intersect if extended to infinity.
 
-.. image:: https://thumbs.gfycat.com/ThunderousWholeDinosaur-size_restricted.gif
+.. image:: img/gif/ThunderousWholeDinosaur.gif
 	:align: center
 	:width: 100%
 
@@ -239,14 +239,14 @@ Smart Target Grouping
 
 Automatically group targets that pass all individual target filters.
 	* Will dynamically group any number of targets between -group size slider minimum- and -group size slider maximum-
-.. image:: https://thumbs.gfycat.com/WetImmediateEarthworm-size_restricted.gif
+.. image:: img/gif/WetImmediateEarthworm.gif
 		:align: center
 		:width: 100%
 
 Outlier Rejection
 	* While group targets are more challenging than normal targets, they provide more information and opportunities for filtering. If you know that a goal is comprised of multiple targets that are close to each other, you can actually reject outlier targets that stand on their own.
 	* You should rely almost entirely on good target filtering, and only use outlier rejection if you see or expect spurious outliers in your camera stream. If you have poor standard target filtering, outlier detection could begin to work against you!
-.. image:: https://thumbs.gfycat.com/CoolQualifiedHedgehog-size_restricted.gif
+.. image:: img/gif/CoolQualifiedHedgehog.gif
 		:align: center
 		:width: 100%
 
@@ -267,7 +267,7 @@ Targeting Region
 -------------------
 Controls the point of interest of the chosen contour's bounding rectangle. By default, the tracking parameters tx and ty represent the offsets from your crosshair to the center of the chosen rectangle. You can use another option if a target changes in size, or is comprised of two targets that sometimes blend together.
 
-.. image:: https://thumbs.gfycat.com/FakeThinAfricanbushviper-size_restricted.gif
+.. image:: img/gif/FakeThinAfricanbushviper.gif
 	:align: center
 	:width: 100%
 
@@ -283,7 +283,7 @@ Crosshair Calibration
 -------------------------
 Controls the "origin" of your targeting values. Let's say a shooter on your robot needs to be calibrated such that it always points a bit left-of-center. You can line up your robot, click "calibrate," and all of your targeting values will be sent relative to your new crosshair. See the calibration page for more details!
 
-.. image:: https://thumbs.gfycat.com/JauntyTerrificGreatwhiteshark-size_restricted.gif
+.. image:: img/gif/JauntyTerrificGreatwhiteshark.gif
 	:align: center
 	:width: 100%
 
@@ -298,7 +298,7 @@ Controls the "origin" of your targeting values. Let's say a shooter on your robo
 
 Experiment with PnP point-based pose estimation here.
 
-.. image:: https://thumbs.gfycat.com/LeftHalfBluewhale-size_restricted.gif
+.. image:: img/gif/LeftHalfBluewhale.gif
 	:align: center
 	:width: 100%
 
@@ -322,7 +322,7 @@ Goal Z-Offset
 -------------------
 Automatically the 3D Depth value of your target (Z-Axis).
 
-.. image:: https://thumbs.gfycat.com/AcidicHonoredElephant-size_restricted.gif
+.. image:: img/gif/AcidicHonoredElephant.gif
 	:align: center
 	:width: 100%
 
