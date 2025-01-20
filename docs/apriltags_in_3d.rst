@@ -18,7 +18,7 @@ Point-of-Interest tracking allows you to define a 3D point of interest relative 
 Let's say you are trying to target a field feature that is 6 inches to the left and 2 inches behind an AprilTag. You can simply define that point of interest
 in the web interface (in meters), and then track this 3D point using tx and ty as if it existed as a real-world target.
 
-.. image:: https://thumbs.gfycat.com/CoarseUnluckyArchaeocete-size_restricted.gif
+.. image:: img/gif/CoarseUnluckyArchaeocete.gif
     :width: 100%
  
 
@@ -31,10 +31,10 @@ Full 3D tracking is accessible though the "campose" networktables array and thro
 you will find several different visualizers that will help you understand the purpose of each of the available transforms in the json dump. In general,
 the most useful transforms will be "Camera Transform in Target Space", and "Robot Transform in Target Space". See the coordinate system doc for more details.(DOCS WIP)
 
-.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ImpressionableNaturalHen-size_restricted.gif?raw=true
+.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ImpressionableNaturalHen.gif?raw=true
     :width: 100%
 
-.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/FineColorlessBeardeddragon-size_restricted.gif?raw=true
+.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/FineColorlessBeardeddragon.gif?raw=true
     :width: 100%
 
 Robot Localization (botpose and MegaTag)
@@ -45,7 +45,7 @@ Robot Localization (botpose and MegaTag)
 If your Limelight's robot-space pose has been configured in the web ui, and a field map has been uploaded via the web ui, then the robot's location in field space
 will be available via the "botpose" networktables array (x,y,z in meters, roll, pitch, yaw in degrees). 
 
-.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ForthrightUnfinishedIridescentshark-size_restricted.gif?raw=true
+.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ForthrightUnfinishedIridescentshark.gif?raw=true
     :width: 100%
 
 Our implementation of botpose is called MegaTag. If more than one tag is in view, it is resilient to individual tag ambiguities and noise in the image.
@@ -55,7 +55,7 @@ If all keypoints are coplanar, there is still some risk of ambiguity flipping.
 * Blue Cylinder: Old BotPose
 * White Cylinder: MegaTag Botpose
 
-.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ConfusedQuerulousLiger-size_restricted.gif?raw=true
+.. image:: https://github.com/Darksharkthe1st/LLDocsGifs/blob/main/ConfusedQuerulousLiger.gif?raw=true
     :width: 100%
 
 Notice how the new botpose (white cylinder) is extremely stable compared to the old botpose (blue cylinder). You can watch the tx and ty values as well.
