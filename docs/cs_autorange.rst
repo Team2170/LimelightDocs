@@ -48,7 +48,7 @@ Next we'll describe a simple trick to make driving to the correct distance even 
 
 If you need to change the shooting distance, just move your robot to the new distance and re-calibrate the limelight crosshair.  
 
-.. image:: https://thumbs.gfycat.com/GraveEverlastingFawn-size_restricted.gif
+.. image:: img/gif/GraveEverlastingFawn.gif
 
 Here is an example of a robot using the above idea.  Note how it backs up to the correct range automatically when the driver stops driving and presses the "aim" button:
 
