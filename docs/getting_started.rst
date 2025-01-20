@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-.. figure:: https://thumbs.gfycat.com/ShabbyKaleidoscopicDassie-size_restricted.gif
+.. figure:: img/gif/ShabbyKaleidoscopicDassie.gif
    :width: 100%
    :alt: 2910
    :align: center
