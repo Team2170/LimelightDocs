@@ -112,7 +112,7 @@ The current camera pose may now be read with "camerapose_robotspace" in networkt
 
 Here's an example of a Limelight on an elevator:
 
-.. image:: https://thumbs.gfycat.com/SeriousLegitimateDowitcher-size_restricted.gif
+.. image:: img/gif/SeriousLegitimateDowitcher.gif
 
 
 Increased Max Exposure
@@ -196,7 +196,7 @@ Cropping For Performance
 AprilTag pipelines now have crop sliders. Cropping your image will result in improved framerates at any resolution. AprilTag pipelines also support the dynamic “crop” networktables key. In case you missed it last year, dynamic cropping with the “Crop” NT key was added at the request of one of the best teams in the world in 2022 to improve shoot-on-the-move reliability.
 Note the framerate increase from ~55fps to ~80fps.
 
-.. image:: https://thumbs.gfycat.com/HandyCompleteHerring-size_restricted.gif
+.. image:: img/gif/HandyCompleteHerring.gif
 
 
 Easier Filtering
@@ -229,11 +229,11 @@ White Cylinder: New MegaTag Botpose
 
 Notice how the new botpose (white cylinder) is extremely stable compared to the old botpose (blue cylinder). You can watch the tx and ty values as well.
 
-.. image:: https://thumbs.gfycat.com/ConfusedQuerulousLiger-size_restricted.gif
+.. image:: img/gif/ConfusedQuerulousLiger.gif
 
 Here’s the full screen, showing the tag ambiguity:
 
-.. image:: https://thumbs.gfycat.com/ElementaryCarefulHoopoe-size_restricted.gif
+.. image:: img/gif/ElementaryCarefulHoopoe.gif
 
 Here are the advantages:
 
@@ -407,14 +407,14 @@ Features and Changes
 	* Ignore all pixels outside of a specified crop rectangle
 	* If your flywheel has any sweet spots on the field, you can make use of the crop filter to ignore the vast majority of pixels in specific pipelines. This feature should help teams reduce the probability of tracking non-targets.
 	* If you are tracking cargo, use this feature to look for cargo only within a specific part of the image. Consider ignoring your team's bumpers, far-away targets, etc.
-	* .. image:: https://thumbs.gfycat.com/ChillyWhimsicalGander-size_restricted.gif
+	* .. image:: img/gif/ChillyWhimsicalGander.gif
 
 
 * Corners feature now compatible with smart target grouping
 	* This one is for the teams that want to do more advanced custom vision on the RIO
 	* "tcornxy" corner limit increased to 64 corners
 	* Contour simplification and force convex features now work properly with smart target grouping and corner sending 
-	* .. image:: https://thumbs.gfycat.com/DaringTatteredBlowfish-size_restricted.gif
+	* .. image:: img/gif/DaringTatteredBlowfish.gif
 
 * IQR Filter max increased to 3.0
 * Web interface live target update rate reduced from 30fps to 15fps to reduce bandwidth and cpu load while the web interface is open
@@ -435,12 +435,12 @@ Features
 
 * Hue Rainbow
 	* The new hue rainbow makes it easier to configure the hue threshold. Here’s an example of filtering for blue pixels:
-	* .. image:: https://thumbs.gfycat.com/BoldDishonestAntarcticgiantpetrel-size_restricted.gif
+	* .. image:: img/gif/BoldDishonestAntarcticgiantpetrel.gif
 
 * Hue Inversion
 	* The new hue inversion feature is a critical feature if you want to track red objects, as red is at both the beginning and the end of the hue range:
 	* If you’re trying to track cargo, the aspect ratio filter (set a tight range around “1”) and the fullness filter (you want above 70%) should work quite well. Explicit “circle” filtering is relatively slow and won't work as well as people assume.
-	* .. image:: https://thumbs.gfycat.com/MeekSnarlingFluke-size_restricted.gif
+	* .. image:: img/gif/MeekSnarlingFluke.gif
 
 * New Python Libraries
 	* Added scipy, scikit-image, pywavelets, pillow, and pyserial to our python sandbox.
@@ -456,12 +456,12 @@ Features
 * Smart Target Grouping
 	* Automatically group targets that pass all individual target filters.
 	* Will dynamically group any number of targets between -group size slider minimum- and -group size slider maximum-
-	* .. image:: https://thumbs.gfycat.com/WetImmediateEarthworm-size_restricted.gif
+	* .. image:: img/gif/WetImmediateEarthworm.gif
 
 * Outlier Rejection
 	* While this goal is more challenging than other goals, it gives us more opportunities for filtering. Conceptually, this goal is more than a “green blob.” Since we know that the goal is comprised of multiple targets that are close to each other, we can actually reject outlier targets that stand on their own.
 	* You should rely almost entirely on good target filtering for this year’s goal, and only use outlier rejection if you see or expect spurious outliers in your camera stream. If you have poor standard target filtering, outlier detection could begin to work against you!
-	* .. image:: https://thumbs.gfycat.com/CoolQualifiedHedgehog-size_restricted.gif
+	* .. image:: img/gif/CoolQualifiedHedgehog.gif
 
 * Limelight 2022 Image Upgrades
 	We have removed hundreds of moving parts from our software. These are the results:
@@ -475,7 +475,7 @@ Features
 * Full Python Scripting
     Limelight has successfully exposed a large number of students to some of the capabilities of computer vision in robotics. With python scripting, teams can now take another step forward by writing their own image processing pipelines.
 
-	* .. image:: https://thumbs.gfycat.com/SpotlessGlisteningCygnet-size_restricted.gif
+	* .. image:: img/gif/SpotlessGlisteningCygnet.gif
     * Limelight handles the hardware, camera interfacing, networking, streaming, and basic image pre-processing. All you need to do is write one python function called runPipeline().
     * One of the most important features we offer is the one-click crosshair. The crosshair, dual crosshair, tx, ty, ta, ts, tvert, and all other standard limelight NetworkTables readings will automatically latch to the contour you return from the python runPipeline() function.
     * Write your own real-time visualizations, thresholding, filtering, and bypass our backend entirely if desired.
@@ -510,17 +510,17 @@ Features
 
 	* Our last update added 2x Hardware Zoom for all Limelight models at no cost whatsoever. We’ve managed to push our hardware zoom even further with 3x Hardware Zoom. All Limelight models are now capable of 3x Hardware Zoom at 60fps. This makes full-court tracking even easier for every team.
 	* The following gif shows 1x, 2x, and 3x Hardware Zoom from the sector line (full court shot line):
-	* .. image::  https://thumbs.gfycat.com/UnitedAntiqueKestrel-size_restricted.gif
+	* .. image::  img/gif/UnitedAntiqueKestrel.gif
 	* This gif shows only 1x and 3x Hardware Zoom from the full-court sector line shot location:
-	* .. image:: https://thumbs.gfycat.com/HeftySimpleAnemone-size_restricted.gif
+	* .. image:: img/gif/HeftySimpleAnemone.gif
 
 * Hardware Panning
 
 	* Robots capable of shooting from both long and short distances in 2020 would have found it difficult to use Hardware Zoom on their Limelights without the use of an active, adjustable Limelight mount. We have incorporated Hardware Panning to solve this problem. 
 	* This gif shows Hardware Panning while using 3x Hardware Zoom. This should simplify mounting for teams who wish to use Hardware Zoom:
-	* .. image:: https://thumbs.gfycat.com/UntidyElaborateDartfrog-size_restricted.gif
+	* .. image:: img/gif/UntidyElaborateDartfrog.gif
 	* Hardware Panning on the  X and Y axes at 3x Hardware Zoom
-	* .. image:: https://thumbs.gfycat.com/EdibleTimelyElver-size_restricted.gif 
+	* .. image:: img/gif/EdibleTimelyElver.gif 
 
 
 Bugfixes
@@ -540,30 +540,30 @@ Features
 	* Enable 2x Hardware zoom to achieve vastly improved tracking at long range, and stable tracking at full-court distances.
 	* This feature comes with absolutely no latency or framerate cost - tracking continues to execute at 90fps with no additional overhead.
 	* Zoom from the autonomous starting line (~127" away):
-	* .. image:: https://thumbs.gfycat.com/LawfulRapidArchaeocete-size_restricted.gif
+	* .. image:: img/gif/LawfulRapidArchaeocete.gif
 	* Zoom from the front of the trench run (~210" away):
-	* .. image:: https://thumbs.gfycat.com/GrippingWaterloggedEmperorshrimp-size_restricted.gif
+	* .. image:: img/gif/GrippingWaterloggedEmperorshrimp.gif
 	* Zoom from the front of the color wheel (~310" away):
-	* .. image:: https://thumbs.gfycat.com/UnlinedFarawayArcticduck-size_restricted.gif
+	* .. image:: img/gif/UnlinedFarawayArcticduck.gif
 	* Zoom from the very back of the trench run (~420" away):
-	* .. image:: https://thumbs.gfycat.com/PartialColorlessGiraffe-size_restricted.gif
+	* .. image:: img/gif/PartialColorlessGiraffe.gif
 	* Zoom from the sector line (nearly full-court):
-	* .. image:: https://thumbs.gfycat.com/GreatGiftedAkitainu-size_restricted.gif
+	* .. image:: img/gif/GreatGiftedAkitainu.gif
 
 * Manual Crosshairs
 
 	* Manually adjust single and dual crosshair locations with sliders in the web interface
-	* .. image:: https://thumbs.gfycat.com/ElaborateUnimportantCuscus-size_restricted.gif
+	* .. image:: img/gif/ElaborateUnimportantCuscus.gif
 	
 * New SolvePNP / 3D features (Still experimental)
 
 	* We have added the "Force Convex" option to use only the outermost points of a target - this is necessary in 2020 due to the thin tape used for the hexagonal target.
-	* .. image:: https://thumbs.gfycat.com/MemorableHastyFiddlercrab-size_restricted.gif
+	* .. image:: img/gif/MemorableHastyFiddlercrab.gif
 	* The "bind target" option has been added. This feature binds "tx" and "ty" to the 3D target. This is required to guide robots to score using 3D targets.
-	* .. image:: https://thumbs.gfycat.com/DeadUnevenJackrabbit-size_restricted.gif
+	* .. image:: img/gif/DeadUnevenJackrabbit.gif
 	* Finally, add the "Goal Z-Offset" option to automatically offset your desired target location in 3D space on the Z-axis.
 	* In Infinite Recharge, the "Goal Z-Offset" would be used to track the center of the small, circular goal behind the hexagonal goal.
-	* .. image:: https://thumbs.gfycat.com/AcidicHonoredElephant-size_restricted.gif
+	* .. image:: img/gif/AcidicHonoredElephant.gif
 	
 	* SolvePnP is still an experimental feature! We believe there are creative ways to play this game without SolvePnP, but we will continue to improve this feature.
 
@@ -596,14 +596,14 @@ Features
 	* The area slider does not always solve this problem, as teams want to track small vision targets at large distances.
 	* This new feature will automatically reject *relatively* small contours that have passed through all other filters.
 	* As a robot moves away from a vision target (decreasing its size), SSR will automatically adjust to only reject *relatively* small contours.
-	* .. image:: https://thumbs.gfycat.com/EachInsecureAustraliansilkyterrier-size_restricted.gif
+	* .. image:: img/gif/EachInsecureAustraliansilkyterrier.gif
 
 Changes
 ----------------
 * Tooltips
 
 	* Tooltips are now available on some Limelight controls
-	* .. image:: https://thumbs.gfycat.com/SeparateHonestEthiopianwolf-size_restricted.gif
+	* .. image:: img/gif/SeparateHonestEthiopianwolf.gif
 
 
 2019.6.1 Hotfix (3/14/19)
@@ -658,7 +658,7 @@ With 2019.5 we are introducing the brand new compute3D camera localization featu
 
 This is not a silver bullet for this year's game. We highly recommend thinking of creative ways to use the standard high-speed 90 fps tracking unless this feature is absolutely necessary.
 
-.. image:: https://thumbs.gfycat.com/LeftHalfBluewhale-size_restricted.gif
+.. image:: img/gif/LeftHalfBluewhale.gif
 
 All example gifs were created with an LL2 mounted on the side of a kitbot. This is why you will see slight changes in translation during turns.
 
@@ -667,9 +667,9 @@ Features
 * High-Precision Mode and PnP
 	
 	* In the following gif, a Limelight 2 was placed 37 inches behind and 14.5 inches to the right of the target.
-		* .. image:: https://thumbs.gfycat.com/ThirstyFailingGreatdane-size_restricted.gif
+		* .. image:: img/gif/ThirstyFailingGreatdane.gif
 	* The Limelight was later turned by hand. Notice how the distances remain mostly unchanged:
-		* .. image:: https://thumbs.gfycat.com/DisloyalUnfinishedAntipodesgreenparakeet-size_restricted.gif
+		* .. image:: img/gif/DisloyalUnfinishedAntipodesgreenparakeet.gif
 	* With 2019.4, we introduced corner sending. This allowed advanced teams to write their own algorithms using OpenCV's solvePNP(). With 2019.5, this is all done on-board.
 	* Upload a plain-text csv file with a model of your target. We have pre-built models of 2019 targets hosted on our website. All models must have a centered origin, and use counter-clockwise point ordering with inch scaling.
 	* Enable the new high-res 960x720 mode, and then enable "Solve 3D" to acquire the position and rotation of your Limelight relative to your target.
@@ -679,7 +679,7 @@ Features
 * Black Level
 
 	* With the new black level slider, thresholding is even easier. Increase the black level offset to further darken your images.
-	* .. image:: https://thumbs.gfycat.com/FoolishUnimportantLacewing-size_restricted.gif
+	* .. image:: img/gif/FoolishUnimportantLacewing.gif
 
 Breaking Changes
 ----------------
@@ -753,14 +753,14 @@ Bug Fixes
 
 * Intersection Filter
 
-	* .. image:: https://thumbs.gfycat.com/ThunderousWholeDinosaur-size_restricted.gif
+	* .. image:: img/gif/ThunderousWholeDinosaur.gif
 		:align: center
 
 	* The all-new intersection filter will allow teams to better distinguish between different groups of contours. The filter extends contours to infinity, and checks where they would intersect.
 
 * Direction Filter
 
-	* .. image:: https://thumbs.gfycat.com/HalfUnselfishHarvestmen-size_restricted.gif
+	* .. image:: img/gif/HalfUnselfishHarvestmen.gif
 		:align: center
 
 	* The new direction filter will allow teams to better distinguish between contours of different orientations.
@@ -827,7 +827,7 @@ With 2019, we are introducing GRIP support, a brand-new interface, and a cleaner
 
 	* Select between "largest", "smallest", "highest", "lowest", "leftmost", "rightmost", and "closest" sort options.
 	* We feel that many teams will make use of the "closest" option for cube tracking.
-	* .. image:: https://thumbs.gfycat.com/PlaintiveSizzlingEskimodog-size_restricted.gif
+	* .. image:: img/gif/PlaintiveSizzlingEskimodog.gif
 	
 2018.3 (2/28/18)
 ~~~~~~~~~~~~~~~~~~~~~
@@ -846,7 +846,7 @@ Changes
 	* Setting the snapshot value to "1" will only take a single snapshot and reset the value to 0. Snapshotting is throttled to 2 snapshots per second.
 	* Snapshot limit increased to 100 images.
 	* Snapshot selector area is now scrollable to support 100 images.
-	* .. image:: https://thumbs.gfycat.com/ComplexConstantGalapagosalbatross-size_restricted.gif
+	* .. image:: img/gif/ComplexConstantGalapagosalbatross.gif
 
 2018.2 (2/10/18)
 ~~~~~~~~~~~~~~~~~~~~~
@@ -859,13 +859,13 @@ Features
 	* Setup HSV threshold parameters in a matter of clicks
 	* The "Set" wand centers HSV parameters around the selected pixel
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
-	* .. image:: https://thumbs.gfycat.com/FarHandyCanvasback-size_restricted.gif
+	* .. image:: img/gif/FarHandyCanvasback.gif
 	* The "Subtract" wand adjusts HSV parameters to ignore the selected pixel
-	* .. image:: https://thumbs.gfycat.com/HoarseEnragedIslandwhistler-size_restricted.gif
+	* .. image:: img/gif/HoarseEnragedIslandwhistler.gif
 
 * Snapshots
 	
-	* .. image:: https://thumbs.gfycat.com/WindyDefiantCrayfish-size_restricted.gif
+	* .. image:: img/gif/WindyDefiantCrayfish.gif
 	* Snapshots allow users to save what Limelight is seeing during matches or event calibration, and tune pipelines while away from the field.
 	* Save a snapshot with the web interface, or by posting a "1" to the "snapshot" NetworkTables key
 	* To view snapshots, change the "Image Source" combo box on the input tab. This will allow you to test your pipelines on snapshots rather than Limelight's camera feed
@@ -919,7 +919,7 @@ Features
 ----------------
 * New Vision Pipeline interface:
 
-	* .. image:: https://thumbs.gfycat.com/UnfitLankyHadrosaurus-size_restricted.gif
+	* .. image:: img/gif/UnfitLankyHadrosaurus.gif
 
 	* Add up to 10 unique vision pipelines, each with custom crosshairs, thresholding options, exposure, filtering options, etc.
 	* Name each vision pipeline.
@@ -929,7 +929,7 @@ Features
 	* Upload vision pipelines to any "slot" to use downloaded pipelines.
 * Target "Grouping" option:
 	* Instantly prefer targets that consist of two shapes with the "dual" grouping mode". "Single" and "Tri" options are also available
-	* .. image:: https://thumbs.gfycat.com/ScalyDeficientBrahmanbull-size_restricted.gif
+	* .. image:: img/gif/ScalyDeficientBrahmanbull.gif
 * New Crosshair Calibration interface:
 	* "Single" and "Dual" crosshair modes.
 	* "Single" mode is what Limelight utilized prior to this update. Teams align their robots manually, and "calibrate" to re-zero targeting values about the crosshair.
