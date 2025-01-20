@@ -1,7 +1,7 @@
 Limelight Docs
 ========================
 
-.. figure:: https://thumbs.gfycat.com/ShimmeringHonoredEeve-size_restricted.gif
+.. figure:: img/gif/ShimmeringHonoredEeve.gif
    :width: 100%
    :alt: 2910
    :align: center
